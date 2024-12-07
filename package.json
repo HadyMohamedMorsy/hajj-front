@@ -21,9 +21,10 @@
     "vite": "^5.4.10",
     "vite-plugin-minify": "^2.0.1"
   },
-    "dependencies": {
+  "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "flowbite": "^2.5.2",
-    "pdfjs-dist": "^4.8.69"
+    "pdfjs-dist": "^4.8.69",
+    "swiper": "^11.1.15"
   }
 }

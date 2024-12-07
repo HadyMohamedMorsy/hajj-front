@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../public/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
+    />
+
     <title>البوابه المصريه الموحده للحج</title>
 
     <script type="application/ld+json">
@@ -17,88 +22,154 @@
     </script>
   </head>
   <body>
-    <header
-      class="bg-white shadow-md"
-      itemscope
-      itemtype="https://schema.org/WPHeader"
-    >
-      <div class="flex items-center justify-between px-4 py-3">
+    <header class="shadow-md" itemscope itemtype="https://schema.org/WPHeader">
+      <div class="navbar relative flex items-center justify-between px-4 py-3">
         <div class="flex items-center space-x-4">
-          <div class="flex items-center space-x-2">
-            <img src="logo.png" alt="Logo" class="h-10 w-10" itemprop="logo" />
+          <div class="flex items-center">
+            <img
+              src="./images/logo.png"
+              alt="Logo"
+              itemprop="logo"
+              class="w-[130px] object-contain"
+            />
           </div>
-          <span itemprop="name" class="text-sm font-semibold text-gray-700"
-            >البوابة المصرية الموحدة للحج</span
-          >
         </div>
 
-        <nav
-          class="hidden space-x-6 text-sm font-medium text-gray-700 md:flex"
-          itemprop="mainEntityOfPage"
-        >
-          <a href="#" class="hover:text-gray-900" itemprop="url">عن البوابة</a>
-          <a href="#" class="hover:text-gray-900" itemprop="url">أنواع الحج</a>
-          <a href="#" class="hover:text-gray-900" itemprop="url">خرائط</a>
-          <a href="#" class="hover:text-gray-900" itemprop="url"
-            >أسئلة وفيديوهات</a
-          >
-          <a href="#" class="hover:text-gray-900" itemprop="url"
-            >أماكن تواجد البعثة</a
-          >
-          <a href="#" class="hover:text-gray-900" itemprop="url"
-            >الشكاوى والمقترحات</a
-          >
+        <nav class="hidden md:flex" itemprop="mainEntityOfPage">
+          <ul class="flex items-center gap-4 text-sm font-medium">
+            <li>
+              <a itemprop="url" href="#" class="font-bold text-black">
+                عن البوابة</a
+              >
+              <ul class="sun-menu">
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white"> خدمات البوابه</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">تفاصيل متعدده</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a itemprop="url" href="#" class="font-bold text-black">
+                أنواع الحج</a
+              >
+              <ul class="sun-menu">
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white"> حج القرعه</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج الهيئات</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج الجمعيات </a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج السياحه </a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج الفراجي </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a itemprop="url" href="#" class="font-bold text-black"> خرائط</a>
+              <ul class="sun-menu">
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white"> الحرم المكي</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">الحرم المدني</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">جبل عرفات </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="font-bold text-black" itemprop="url">
+                أسئلة وفيديوهات</a
+              >
+              <ul class="sun-menu">
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white"> اسئله الشائعه</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="font-bold text-black" itemprop="url">
+                أماكن تواجد البعثة
+              </a>
+              <ul class="sun-menu">
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white"> حج القرعه</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج التضامن</a>
+                </li>
+                <li class="px-2 py-2">
+                  <a href="#" class="text-white">حج السياحه</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="font-bold text-black" itemprop="url">
+                الشكاوى والمقترحات</a
+              >
+            </li>
+          </ul>
         </nav>
 
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center gap-8">
           <!-- Contact Number -->
           <div
-            class="flex items-center space-x-2 text-sm text-gray-700"
+            class="phone flex items-center text-sm"
             itemprop="contactPoint"
             itemscope
             itemtype="https://schema.org/ContactPoint"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-gray-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6.25 2.5a1.75 1.75 0 000 3.5h11.5a1.75 1.75 0 000-3.5H6.25zM6.25 8h11.5M8.5 13.25h9.75M9.25 18.75h9.75"
-              />
-            </svg>
             <span>02-27983000</span>
+            <div class="icon">
+              <img src="./images/icon/phone.png" alt="" />
+            </div>
           </div>
+
+          <button class="language-switch flex gap-1">
+            <img src="./images/icon/world.png" alt="" class="object-contain" />
+            <span class="text-sm font-bold">Ar</span>
+          </button>
 
           <!-- Login Button & Language Switch -->
           <div class="flex items-center space-x-2">
-            <button
-              class="rounded-md bg-yellow-400 px-4 py-1 text-sm font-semibold text-white hover:bg-yellow-500"
-            >
+            <button class="btn px-4 py-1 text-sm text-white">
               تسجيل الدخول
             </button>
-            <div
-              class="cursor-pointer text-sm text-gray-700"
-              itemprop="inLanguage"
-            >
-              Ar 🌐
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-page">
-        <div class="h-screen w-full">
-          <img
-            src="./images/hajj.jpg"
-            alt="Hajj Image"
-            class="h-full w-full object-cover"
-          />
+      <div class="hero relative h-[530px] w-full object-cover">
+        <img
+          src="./images/hajj.jpg"
+          alt="Hajj Image"
+          class="h-full w-full object-cover"
+        />
+        <div class="content-hero container-section absolute">
+          <div class="text-white">
+            <h2 class="text-[60px]">البوابة المصرية الموحدة للحج</h2>
+            <p class="text-[30px]">بوابتــك لمتــابعة كافــة إجــراءات حجــك</p>
+          </div>
+          <button
+            class="btn hover-white mt-8 px-[25px] py-[10px] text-[20px] text-sm text-white"
+          >
+            اقراء المزيد
+          </button>
         </div>
       </div>
     </header>
@@ -106,85 +177,658 @@
     <!-- hero inner -->
 
     <main>
-      <section class="container my-10">
-        <div class="flex gap-3">
-          <img
-            src="./images/logo-only.png"
-            alt=""
-            class="w-12 object-contain"
-          />
-          <h2>البوابه المصريه الموحده للحج</h2>
+      <section>
+        <div class="intro-section">
+          <div class="container-section relative z-10 py-8">
+            <div class="flex items-center gap-3">
+              <img
+                src="./images/logo-only.png"
+                alt=""
+                class="w-12 object-contain"
+              />
+              <h2 class="text-[40px]">البوابة المصرية الموحدة للحج</h2>
+            </div>
+
+            <p class="my-5 text-[20px]">
+              هي بوابة الكترونية تم انشائها بموجب القانون رقم 84 لسنة 2022 م و
+              تتولى الادارة العامة للشئون الادارية بوزارة الداخلية إدارتها
+              والاشراف عليها و تطويرها و يتم تسجيل بيانات المواطنين المتقدمين و
+              الحاصلين على تأشيرة حج كما يسجل عليها الجهاتالمنظمة ل<span
+                class="text-primary"
+              >
+                ( وزارة الداخلية - وزارة التضامن - وزارة السياحة )</span
+              >
+              .و التي تتولى كلاً فيما يخصه تسجيل بيانات الجهات المنفذة
+            </p>
+            <p class="mb-20 mt-5 text-[20px]">
+              تمنح البوابة المصرية الموحدة للحج
+              <span class="text-primary"> ( اسم مستخدم و كلمة مرور )</span>
+              للجهات المنظمة للحج و كذا الجها§ت المنفذة و تعتبر البوابة هي
+              المسئولة عن .إصدار الكود التعريفي الذي سيتم وضعه عن طريق الجهات
+              المنفذة على جواز سفر الحاج
+            </p>
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
+              <div class="box-wrapper overflow-hidden rounded-xl">
+                <div class="image-wrapper">
+                  <img src="./images/intro-section/img-5.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4 class="mb-2 text-lg font-bold text-white">حج القرعه</h4>
+                  <button
+                    class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white"
+                  >
+                    تفاصيل اكثر
+                  </button>
+                </div>
+              </div>
+              <div class="box-wrapper overflow-hidden rounded-xl">
+                <div class="image-wrapper">
+                  <img src="./images/intro-section/img-4.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4 class="mb-2 text-lg font-bold text-white">حج الهيئات</h4>
+                  <button
+                    class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white"
+                  >
+                    تفاصيل اكثر
+                  </button>
+                </div>
+              </div>
+              <div class="box-wrapper overflow-hidden rounded-xl">
+                <div class="image-wrapper">
+                  <img src="./images/intro-section/img-3.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4 class="mb-2 text-lg font-bold text-white">حج الجمعيات</h4>
+                  <button
+                    class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white"
+                  >
+                    تفاصيل اكثر
+                  </button>
+                </div>
+              </div>
+              <div class="box-wrapper overflow-hidden rounded-xl">
+                <div class="image-wrapper">
+                  <img src="./images/intro-section/img-2.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4 class="mb-2 text-lg font-bold text-white">حج السياحه</h4>
+                  <button
+                    class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white"
+                  >
+                    تفاصيل اكثر
+                  </button>
+                </div>
+              </div>
+              <div class="box-wrapper overflow-hidden rounded-xl">
+                <div class="image-wrapper">
+                  <img src="./images/intro-section/img-1.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4 class="mb-2 text-lg font-bold text-white">حج الفرادي</h4>
+                  <button
+                    class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white"
+                  >
+                    تفاصيل اكثر
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi a
-          neque fugiat perferendis sed doloremque, eos sit ea, aliquam ipsum
-          autem aut, nobis deserunt dolores vero laudantium ex nesciunt soluta?
-        </p>
       </section>
 
-      <section class="container my-10">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-5">
-          <div class="box-wrapper overflow-hidden rounded-xl">
-            <div class="image-wrapper">
-              <img src="./images/image-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h4>حج الجمعيات</h4>
-              <button>تفاصيل اكثر</button>
-            </div>
-          </div>
-          <div class="box-wrapper overflow-hidden rounded-xl">
-            <div class="image-wrapper">
-              <img src="./images/image-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h4>حج الجمعيات</h4>
-              <button>تفاصيل اكثر</button>
-            </div>
-          </div>
-          <div class="box-wrapper overflow-hidden rounded-xl">
-            <div class="image-wrapper">
-              <img src="./images/image-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h4>حج الجمعيات</h4>
-              <button>تفاصيل اكثر</button>
-            </div>
-          </div>
-          <div class="box-wrapper overflow-hidden rounded-xl">
-            <div class="image-wrapper">
-              <img src="./images/image-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h4>حج الجمعيات</h4>
-              <button>تفاصيل اكثر</button>
-            </div>
-          </div>
-          <div class="box-wrapper overflow-hidden rounded-xl">
-            <div class="image-wrapper">
-              <img src="./images/image-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h4>حج الجمعيات</h4>
-              <button>تفاصيل اكثر</button>
+      <section>
+        <div class="live-section">
+          <div class="py-8">
+            <div class="container-section relative z-10">
+              <div class="mb-12 flex items-center gap-2">
+                <img src="./images/live/Path 3752.png" alt="" />
+                <h3 class="text-primary text-2xl font-bold">بث مباشر</h3>
+                <div class="border-path flex-1"></div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <div class="video mx-auto w-[80%]">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/Kt7hKHlArl8?si=lENdHFSsEVjCcJPt"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="container my-10">
-        <h2 class="mb-3">الفيديوهات التعليميه</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          dolorum vero placeat impedit est et itaque laboriosam doloremque.
-          Totam ad iusto earum mollitia obcaecati laudantium nesciunt,
-          perferendis harum modi eos!
-        </p>
+      <section>
+        <div class="learning-section">
+          <div class="container-section relative z-10 py-8">
+            <div class="flex items-center gap-2">
+              <img class="h-full" src="./images/learning/pauso.png" alt="" />
+              <h3 class="text-primary text-2xl font-bold">
+                الفيديوهات التعليمية
+              </h3>
+              <div class="border-path flex-1"></div>
+            </div>
+            <p class="my-5 text-[20px]">
+              الحج هو الركن الخامس من أركان الإسلام الخمسة. فريضة واجبة مرة
+              واحدة في العمر على كل مسلم بالغ عاقل استطاع إليه سبيلاً لقوله
+              تعالى ( وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ
+              إِلَيْهِ سَبِيلً ) وقول رسول الله صلى الله عليه وسلم: ( أيها الناس
+              قد فرض عليكم الحج فحجوا ) رواه أبي هريرة، وأخرجه البخاري والترمذي
+              ومسلم. فُرض الحج في السنة التاسعة من الهجرة
+            </p>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-6.jpeg"
+                    alt=""
+                  />
 
-        <div class=""></div>
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]">
+                    كيفية آداء ركني الحج الطواف والسعي
+                  </a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-4.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]"> اهم سنن الاحرام </a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-8.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]"> ما هو الاحرام</a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-5.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]">
+                    فضل الحج وكيف يمكنك الاستعداد والتجهيز لرحلة الحج</a
+                  >
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-2.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]">
+                    أيام النحر والتشريق وما الذي يقوم به الحاج خلال هذه الأيام
+                  </a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-7.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]"> ما هي المزدلفة </a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-3.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]">
+                    كيف يقضي الحاج يوم عرفة
+                  </a>
+                </h3>
+              </div>
+              <div class="card-wrapper">
+                <div class="image-wrapper relative rounded-md">
+                  <img
+                    class="h-[165px] object-cover"
+                    src="./images/learning/web-1.jpeg"
+                    alt=""
+                  />
+
+                  <div class="absolute left-[20px] top-[10px]">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25.63"
+                        height="25.629"
+                        viewBox="1433.623 4042.646 25.63 25.629"
+                      >
+                        <g data-name="Group 571">
+                          <path
+                            d="M1446.438 4068.275a12.784 12.784 0 0 1-9.061-3.753 12.765 12.765 0 0 1-2.746-4.074 12.723 12.723 0 0 1-1.008-4.988c0-1.729.339-3.408 1.008-4.988a12.763 12.763 0 0 1 2.746-4.073 12.75 12.75 0 0 1 4.073-2.746 12.74 12.74 0 0 1 4.988-1.007c1.73 0 3.408.34 4.988 1.007a12.75 12.75 0 0 1 4.073 2.746 12.782 12.782 0 0 1 3.754 9.061 12.784 12.784 0 0 1-3.754 9.062 12.784 12.784 0 0 1-9.061 3.753Zm0-24.651a11.795 11.795 0 0 0-8.37 3.467 11.797 11.797 0 0 0-3.466 8.369 11.791 11.791 0 0 0 3.466 8.37 11.815 11.815 0 0 0 8.37 3.467 11.794 11.794 0 0 0 8.37-3.467 11.808 11.808 0 0 0 3.467-8.37c0-1.598-.313-3.148-.93-4.607a11.813 11.813 0 0 0-2.537-3.762 11.775 11.775 0 0 0-3.763-2.537 11.764 11.764 0 0 0-4.607-.93Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 340"
+                          />
+                          <path
+                            d="m1451.935 4056.575-7.844 5.655c-.908.655-2.177.005-2.177-1.115v-11.31c0-1.12 1.269-1.77 2.177-1.114l7.844 5.655c.761.548.761 1.68 0 2.229Z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                            data-name="Path 341"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h3
+                  class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
+                >
+                  <a href="#" class="hover:text-[#000]"> ما هو مشعر مني </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container-section">
+          <div class="py-8">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-4">
+              <div class="md:col-span-3">
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="1806.146 4951.519 32.66 30.313"
+                  >
+                    <path
+                      d="M1811.117 4962.152h15.21v-3.626h-15.21v3.626Zm-.607 1.218a.609.609 0 0 1-.609-.608v-4.845c0-.334.273-.607.609-.607h16.426c.335 0 .607.273.607.607v4.845a.609.609 0 0 1-.607.608h-16.426Zm-.609 4.223v-1.217h17.642v1.217h-17.642Zm0 3.755v-1.217h17.642v1.217h-17.642Zm0 3.754v-1.216h8.256v1.216h-8.256Zm-2.537 1.429a4.09 4.09 0 0 0 4.084 4.085h19.902l-.396-.53a4.387 4.387 0 0 1-.872-2.617v-24.735h-22.718v23.797Zm23.933.938a3.15 3.15 0 0 0 3.146 3.147 3.151 3.151 0 0 0 3.147-3.147v-18.164h-6.293v18.164Zm-19.849 4.363a5.308 5.308 0 0 1-5.302-5.301v-24.405c0-.335.273-.607.61-.607h23.933c.336 0 .608.272.608.607v5.962h6.901a.61.61 0 0 1 .609.61v18.77a4.368 4.368 0 0 1-4.364 4.364h-22.995Z"
+                      fill="#ba9061"
+                      fill-rule="evenodd"
+                      data-name="Path 570"
+                    />
+                  </svg>
+                  <h3 class="text-primary text-2xl font-bold">اخر الاخبار</h3>
+                  <div class="border-path flex-1"></div>
+                </div>
+                <div class="new-content overflow-hidden bg-[#fff] p-2">
+                  <div class="mySwiper w-full">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="image-wrapper relative">
+                          <img
+                            src="./images/news/new-1.jpeg"
+                            alt=""
+                            class="h-[320px] w-full object-cover"
+                          />
+                          <div class="details">
+                            <p class="text-xl font-bold">
+                              السعودية تطالب الحجاج بارتداء "بطاقة البوابة
+                              المصرية الموحدة للحج" طوال الموسم
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="image-wrapper">
+                          <img
+                            src="./images/news/new-1.jpeg"
+                            alt=""
+                            class="h-[320px] w-full object-cover"
+                          />
+                          <div class="details">
+                            <p class="text-xl font-bold">
+                              السعودية تطالب الحجاج بارتداء "بطاقة البوابة
+                              المصرية الموحدة للحج" طوال الموسم
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="image-wrapper">
+                          <img
+                            src="./images/news/new-1.jpeg"
+                            alt=""
+                            class="h-[320px] w-full object-cover"
+                          />
+                          <div class="details">
+                            <p class="text-xl font-bold">
+                              السعودية تطالب الحجاج بارتداء "بطاقة البوابة
+                              المصرية الموحدة للحج" طوال الموسم
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pagination flex items-center justify-center py-[20px]"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="1806.146 4951.519 32.66 30.313"
+                  >
+                    <path
+                      d="M1811.117 4962.152h15.21v-3.626h-15.21v3.626Zm-.607 1.218a.609.609 0 0 1-.609-.608v-4.845c0-.334.273-.607.609-.607h16.426c.335 0 .607.273.607.607v4.845a.609.609 0 0 1-.607.608h-16.426Zm-.609 4.223v-1.217h17.642v1.217h-17.642Zm0 3.755v-1.217h17.642v1.217h-17.642Zm0 3.754v-1.216h8.256v1.216h-8.256Zm-2.537 1.429a4.09 4.09 0 0 0 4.084 4.085h19.902l-.396-.53a4.387 4.387 0 0 1-.872-2.617v-24.735h-22.718v23.797Zm23.933.938a3.15 3.15 0 0 0 3.146 3.147 3.151 3.151 0 0 0 3.147-3.147v-18.164h-6.293v18.164Zm-19.849 4.363a5.308 5.308 0 0 1-5.302-5.301v-24.405c0-.335.273-.607.61-.607h23.933c.336 0 .608.272.608.607v5.962h6.901a.61.61 0 0 1 .609.61v18.77a4.368 4.368 0 0 1-4.364 4.364h-22.995Z"
+                      fill="#ba9061"
+                      fill-rule="evenodd"
+                      data-name="Path 570"
+                    />
+                  </svg>
+                  <h3 class="text-primary text-2xl font-bold">درجات</h3>
+                  <div class="border-path flex-1"></div>
+                </div>
+                <div class="weather">
+                  <div class="p-5">
+                    <div class="flex items-center justify-between">
+                      <img
+                        src="./images/news/weather-icon.png"
+                        alt=""
+                        class="w-[60px] object-contain"
+                      />
+                      <span class="text-white"> 14 يونيو 2024</span>
+                    </div>
+
+                    <div class="number-weather mt-5 text-center">
+                      <h5 class="relative text-[120px] text-white">
+                        <div class="absolute right-[10px]">
+                          <img
+                            src="./images/news/circle.png"
+                            class="h-[80px] w-[80px] object-contain"
+                            alt=""
+                          />
+                        </div>
+                        <span> ٢٥</span>
+                      </h5>
+
+                      <div class="-mt-[45px]">
+                        <div
+                          class="border-b-[1px] border-solid border-[#ebb74f] pb-3"
+                        >
+                          <span class="text-primary font-bold">
+                            مشمس وغيوم ممطر</span
+                          >
+                        </div>
+
+                        <div class="city-weather mt-2">
+                          <h3 class="text-primary text-2xl font-bold">
+                            المدينه المنوره
+                          </h3>
+                          <span class="text-primary text-xl font-bold"
+                            >١٢:٣٩ مساءً</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="times">
+        
       </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+          el: ".pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>

@@ -1,4 +1,34 @@
-.container {
-  width: min(1330px, 95%);
+.container-section {
+  width: min(1350px, 95%);
   margin-inline: auto;
+}
+
+.btn {
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  background-color: var(--gold-secound);
+  border: 1px solid var(--gold-secound);
+  border-radius: 20px;
+}
+
+.btn.white {
+  background-color: var(--white);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.btn.hover-white:hover {
+  color: var(--white) !important;
+}
+
+.btn.hover-black:hover {
+  color: var(--black) !important;
+}
+
+.text-primary {
+  color: var(--gold) !important;
 }

@@ -1,9 +1,24 @@
+@font-face {
+  font-family: "expo"; /* Choose a name for the font */
+  src:
+    url("./fonts/expo.woff2") format("woff2"),
+    url("./fonts/expo.woff") format("woff"),
+    url("./fonts/expo.ttf") format("truetype"),
+    url("./fonts/expo.eot");
+}
+
 :root {
+  --gold: #c1965e;
+  --gold-secound: #ebb74f;
+  --green: #adbabb;
+  --black: #000;
+  --white: #fff;
 }
 
 html {
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 ::-webkit-scrollbar {
@@ -24,7 +39,8 @@ html {
 }
 
 body {
-  // font-family: "EXPO", sans-serif;
+  font-size: 1rem;
+  font-family: "expo";
   direction: rtl;
   text-align: start;
   background-color: var(--body-color);
