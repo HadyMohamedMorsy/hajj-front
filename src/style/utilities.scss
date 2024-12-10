@@ -7,9 +7,17 @@
   transition:
     background-color 0.3s,
     color 0.3s;
-  background-color: var(--gold-secound);
+
   border: 1px solid var(--gold-secound);
   border-radius: 20px;
+}
+
+.btn.gold {
+  background: linear-gradient(
+    90deg,
+    rgba(186, 144, 97, 1) 0%,
+    rgba(235, 183, 79, 1) 66%
+  );
 }
 
 .btn.white {

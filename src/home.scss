@@ -1,8 +1,12 @@
 @use "./style/layout/navabar";
+@use "./style/layout/footer.scss";
+@use "./style/layout/marker.scss";
+@use "./style/layout/chat.scss";
 
 .hero {
   img {
     filter: brightness(0.7);
+    height: calc(100vh - 73.78px);
   }
   .content-hero {
     top: 50%;
@@ -194,11 +198,11 @@
 }
 
 .card-time {
-  position: relative;
-  height: 320px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
   .content {
-    position: relative;
-    z-index: 2;
     text-align: center;
     top: 140px;
 
@@ -206,17 +210,6 @@
       padding-bottom: 10px;
       padding-inline: 30px;
     }
-  }
-  &::before {
-    content: "";
-    background-image: url("./images/times/time.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
   }
 }
 

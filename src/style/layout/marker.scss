@@ -1,0 +1,34 @@
+.marker {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-block: 15px;
+  background-color: #2b2b2b;
+  color: white;
+  bottom: 0;
+  z-index: 100;
+  .title {
+    background-color: #2b2b2b;
+    box-shadow: -27px 5px 48px -40px rgba(43, 43, 43, 1);
+    padding-inline: 10px;
+  }
+  p {
+    transform: translateX(27px);
+    font-weight: bold;
+  }
+}
+.button-down {
+  position: fixed;
+  bottom: 30px;
+  background-color: rgb(64, 64, 64);
+  color: #fff;
+  left: 50px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  z-index: 150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
