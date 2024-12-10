@@ -12,6 +12,11 @@
   border-radius: 20px;
 }
 
+.btn.dark {
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+}
+
 .btn.gold {
   background: linear-gradient(
     90deg,
