@@ -1,4 +1,5 @@
 import "./home.scss";
+import iconPath from "./images/logo.ico";
 import "./style.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,3 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elementsToAnimate.forEach((el) => observer.observe(el));
 });
+
+function setFavicon(): void {
+  // Create a new favicon element
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.type = "image/x-icon";
+  link.href = iconPath;
+
+  document.head.appendChild(link);
+}
+
+setFavicon();
