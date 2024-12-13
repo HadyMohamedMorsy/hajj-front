@@ -27,6 +27,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  animation: moveBackground 3s infinite alternate linear;
   position: relative;
   z-index: 1;
   &::after {

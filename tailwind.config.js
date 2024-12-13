@@ -3,5 +3,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [
+    require("flowbite/plugin"),
+    require("tailwindcss-animated"),
+    require("tailwindcss-animation-delay"),
+  ],
 };

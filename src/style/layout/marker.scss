@@ -9,16 +9,45 @@
   color: white;
   bottom: 0;
   z-index: 100;
+  overflow: hidden;
+
   .title {
     background-color: var(--dark);
     box-shadow: -27px 5px 48px -40px rgba(43, 43, 43, 1);
     padding-inline: 10px;
+    position: absolute;
   }
-  p {
-    transform: translateX(27px);
-    font-weight: bold;
+  .content {
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    position: relative;
+
+    .nav-ticker {
+      box-sizing: border-box;
+      padding: 10px 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      color: #fff;
+      display: inline-block;
+      p {
+        font-weight: bold;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+      }
+    }
   }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(20%, 0, 0);
+  }
+}
+
 .button-down {
   position: fixed;
   bottom: 30px;
@@ -31,4 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
