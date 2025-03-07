@@ -1,0 +1,110 @@
+header .navbar {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+nav ul li:hover > .sun-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul li .sun-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  background-color: rgba(193, 150, 94, 0.7);
+  position: absolute;
+  top: 40px;
+  width: 150px;
+  padding-block: 5px;
+  z-index: 5;
+}
+nav ul li .sun-menu.bg-green {
+  background-color: #adbabb;
+}
+
+nav ul li .sun-menu::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  inset-inline-start: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--gold);
+  margin-inline-start: 5px;
+}
+
+nav ul li .sun-menu li:not(:last-child) a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 5px;
+}
+
+nav ul li .sun-menu li a {
+  display: inline-block;
+  width: 100%;
+  transition: color 0.2s;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+nav ul li .sun-menu li a:hover {
+  color: #000;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+}
+
+nav ul li a:not(:last-child) {
+  border-inline-end: 1px solid #000;
+  padding-inline-end: 15px;
+}
+
+nav ul li a:hover {
+  color: var(--gold);
+}
+
+.phone {
+  background-color: #fff;
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  padding-inline: 15px;
+  color: var(--gold);
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.phone .icon {
+  position: absolute;
+  top: -5px;
+  z-index: 2;
+  inset-inline-end: -10px;
+  width: 20px;
+}
+.hero {
+  position: relative;
+}
+
+.hero img {
+  filter: brightness(0.5);
+  height: calc(100vh - 93px);
+  object-fit: cover;
+}
+
+.hero .content-hero {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  padding-inline: 25px;
+  top: 50%;
+  left: 50%;
+  text-align: end;
+  transform: translate(-50%, -50%);
+}

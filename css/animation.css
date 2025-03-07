@@ -1,0 +1,107 @@
+.move-up {
+  animation: moveUpAndFade 0.5s ease-in 1.5s forwards;
+}
+
+.circle-anim {
+  animation: circleWrapper 5s linear infinite;
+}
+
+.animatation {
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* keyframes */
+@keyframes moveUpAndFade {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%); /* Adjust to the desired distance */
+    opacity: 0;
+  }
+}
+
+@keyframes circleWrapper {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hero {
+  0% {
+    transform: scale(1.0.5);
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    transform: scale(1);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+
+@keyframes animateTitle {
+  0% {
+    visibility: hidden;
+  }
+
+  49% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes animatePanel {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left top;
+  }
+
+  49% {
+    transform: scale(1);
+    transform-origin: left top;
+  }
+
+  50% {
+    transform: scale(1);
+    transform-origin: right top;
+  }
+
+  to {
+    transform: scaleX(0);
+    transform-origin: right top;
+  }
+}

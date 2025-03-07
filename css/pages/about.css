@@ -1,0 +1,17 @@
+.about-section {
+  position: relative;
+}
+
+.about-section .top-image {
+  position: absolute;
+  top: -40px;
+  z-index: -1;
+}
+
+.about-section .bottom-image {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}

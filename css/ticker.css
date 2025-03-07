@@ -1,0 +1,38 @@
+.ticker {
+  position: fixed;
+}
+
+.ticker__list {
+  padding-block: 10px;
+  width: 100%;
+  gap: 2px;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-duration: 35s;
+  animation-name: ticker;
+}
+
+.ticker__list li p {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.ticker_title {
+  width: 100px;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(230vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
