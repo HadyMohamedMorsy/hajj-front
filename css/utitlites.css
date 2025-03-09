@@ -5,11 +5,13 @@
 }
 
 .bg-secound-gold {
-  background: linear-gradient(
-    90deg,
-    rgba(186, 144, 97, 1) 0%,
-    rgba(235, 183, 79, 1) 66%
-  );
+  transition: background-color 0.3s;
+  background-color: var(--gold);
+  color: #fff;
+}
+
+.bg-secound-gold:hover {
+  background-color: #000 !important;
 }
 
 .font-arabic-header {
