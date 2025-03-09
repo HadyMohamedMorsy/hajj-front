@@ -44,3 +44,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.control {
+  border-color: #fafaf2;
+  background-color: #fafaf2;
+  padding-block: 14px;
+  padding-inline: 16px;
+}

@@ -59,6 +59,10 @@
   border-radius: 20px;
 }
 
+.learning-section .card-wrapper {
+  cursor: pointer;
+}
+
 .learning-section .video iframe {
   border-radius: 20px;
 }

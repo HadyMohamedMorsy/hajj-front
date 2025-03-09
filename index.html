@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./img/logo-logo.ico" />
 
     <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/all.css" />
+    <link href="./css/flowbite.css" rel="stylesheet" />
     <link href="./css/stylesheet.css" rel="stylesheet" />
     <link href="./css/ticker.css" rel="stylesheet" />
     <link href="./css/utitlites.css" rel="stylesheet" />
@@ -36,9 +38,7 @@
 
   <body>
     <header class="shadow-md" itemscope itemtype="https://schema.org/WPHeader">
-      <div
-        class="navbar relative flex items-center justify-between  px-4 py-3"
-      >
+      <div class="navbar relative flex items-center justify-between px-4 py-3">
         <div class="flex items-center space-x-4">
           <div
             class="flex items-center animated"
@@ -46,12 +46,14 @@
             data-duration="0.5s"
             data-delay=".1s"
           >
-            <img
-              src="./img/logo-logo.png"
-              alt="Logo"
-              itemprop="logo"
-              class="w-[150px] object-contain"
-            />
+            <a href="./index.html">
+              <img
+                src="./img/logo-logo.png"
+                alt="Logo"
+                itemprop="logo"
+                class="w-[150px] object-contain"
+              />
+            </a>
           </div>
         </div>
 
@@ -66,17 +68,15 @@
               data-delay=".2s"
               class="animated"
             >
-              <a itemprop="url" href="#" class="font-bold text-[#000]">
+              <a
+                itemprop="url"
+                href="./about-us.html"
+                class="font-bold text-[#000]"
+              >
                 عن البوابة</a
               >
               <ul class="sun-menu">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> خدمات البوابه</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">تفاصيل متعدده</a>
-                </li>
-                <li class="px-2 py-2">
+                <li class="px-1 py-1">
                   <a href="#" class="text-white">فيديوهات تعليميه</a>
                 </li>
               </ul>
@@ -87,24 +87,54 @@
               data-duration=".1s"
               data-delay=".3s"
             >
-              <a itemprop="url" href="#" class="font-bold text-black animated">
+              <a
+                itemprop="url"
+                href="./type-hajj.html"
+                class="font-bold text-black animated"
+              >
                 أنواع الحج</a
               >
               <ul class="sun-menu">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> حج القرعه</a>
+                <li class="px-1 py-1">
+                  <a
+                    data-modal-target="default-modal-secound"
+                    data-modal-toggle="default-modal-secound"
+                    class="cursor-pointer"
+                  >
+                    حج القرعه</a
+                  >
                 </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج الهيئات</a>
+                <li class="px-1 py-1">
+                  <a
+                    data-modal-target="default-modal-secound"
+                    data-modal-toggle="default-modal-secound"
+                    class="cursor-pointer"
+                    >حج الهيئات</a
+                  >
                 </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج الجمعيات </a>
+                <li class="px-1 py-1">
+                  <a
+                    data-modal-target="default-modal-secound"
+                    data-modal-toggle="default-modal-secound"
+                    class="cursor-pointer"
+                    >حج الجمعيات
+                  </a>
                 </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج السياحه </a>
+                <li class="px-1 py-1">
+                  <a
+                    data-modal-target="default-modal-secound"
+                    data-modal-toggle="default-modal-secound"
+                    class="cursor-pointer"
+                    >حج السياحه
+                  </a>
                 </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج الفرادي </a>
+                <li class="px-1 py-1">
+                  <a
+                    data-modal-target="default-modal-secound"
+                    data-modal-toggle="default-modal-secound"
+                    class="cursor-pointer"
+                    >حج الفرادي
+                  </a>
                 </li>
               </ul>
             </li>
@@ -114,18 +144,9 @@
               data-duration="0.5s"
               data-delay=".4s"
             >
-              <a itemprop="url" href="#" class="font-bold text-black"> خرائط</a>
-              <ul class="sun-menu">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> الحرم المكي</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">الحرم المدني</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">جبل عرفات </a>
-                </li>
-              </ul>
+              <a itemprop="url" href="./maps.html" class="font-bold text-black">
+                خرائط</a
+              >
             </li>
             <li
               class="animated"
@@ -133,15 +154,15 @@
               data-duration="0.5s"
               data-delay=".5s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a href="./asks.html" class="font-bold text-black" itemprop="url">
                 أسئلة وفيديوهات</a
               >
               <ul class="sun-menu">
-                <li class="px-2 py-2">
+                <li class="px-1 py-1">
                   <a href="#" class="text-white"> اسئله الشائعه</a>
                 </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">فيديوهات تعليميه</a>
+                <li class="px-1 py-1">
+                  <a href="./videos.html" class="text-white">فيديوهات تعليميه</a>
                 </li>
               </ul>
             </li>
@@ -151,20 +172,13 @@
               data-duration="0.5s"
               data-delay=".6s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a
+                href="./places.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
                 أماكن تواجد البعثة
               </a>
-              <ul class="sun-menu">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> حج القرعه</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج التضامن</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج السياحه</a>
-                </li>
-              </ul>
             </li>
             <li
               class="animated"
@@ -172,7 +186,11 @@
               data-duration="0.5s"
               data-delay=".7s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a
+                href="./contact-us.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
                 الشكاوى والمقترحات</a
               >
             </li>
@@ -181,7 +199,7 @@
 
         <div class="flex items-center gap-8">
           <div
-            class="phone flex items-center text-sm animated"
+            class="phone md:flex md:items-center hidden text-sm animated"
             data-animation="fadeInUp"
             data-duration=".3s"
             data-delay=".8s"
@@ -189,20 +207,28 @@
             itemscope
             itemtype="https://schema.org/ContactPoint"
           >
-            <span><a href="#"> 02-27983000</a></span>
+            <span><a href="tell:02-27983000"> 02-27983000</a></span>
             <div class="icon">
               <img src="./img/icons/phone.png" alt="" />
             </div>
           </div>
 
           <button
-            class="flex gap-1 animated"
+            class="md:flex md:gap-1 animated hidden lang cursor-pointer"
             data-animation="fadeInUp"
             data-duration=".3s"
             data-delay=".9s"
           >
             <img src="./img/icons/world.png" alt="" class="object-contain" />
-            <span class="text-sm font-bold">Ar</span>
+            <span class="text-sm font-bold lang-text">Ar</span>
+          </button>
+
+          <button
+            class="flex gap-1 md:hidden cursor-pointer hover:text-[#ebb74f] menu"
+          >
+            <span class="text-sm font-bold"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
           </button>
 
           <!-- Login Button & Language Switch -->
@@ -212,7 +238,11 @@
             data-duration=".3s"
             data-delay="1s"
           >
-            <button class="btn bg-secound-gold px-4 py-1 font-bold text-white">
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="btn bg-secound-gold px-4 py-1 font-bold text-white"
+            >
               تسجيل الدخول
             </button>
           </div>
@@ -230,7 +260,7 @@
         <div class="content-hero container-section absolute">
           <div class="text-white">
             <h2
-              class="animated text-[60px] font-arabic-header"
+              class="animated md:text-[60px] text-[30px] font-arabic-header"
               data-animation="fadeInMove"
               data-duration="0.5s"
               data-delay="1.2s"
@@ -246,9 +276,9 @@
               بوابتــك لمتــابعة كافــة إجــراءات حجــك
             </p>
           </div>
-          <div class="flex justify-end gap-3">
+          <div class="flex justify-end gap-3 flex-wrap">
             <button
-              class="btn animated hover-white bg-secound-gold mt-8 px-[25px] py-[10px] text-[20px] font-bold text-white"
+              class="btn animated hover-white bg-secound-gold mt-8 md:px-[25px] md:py-[10px] md:text-[20px] text-[16px] px-[15px] py-[5px] font-bold text-white"
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay="1.4s"
@@ -256,7 +286,7 @@
               الاستعلام عن طلب حج
             </button>
             <button
-              class="btn animated hover-white dark mt-8 px-[25px] py-[10px] text-[20px] font-bold bg-black border-none text-white"
+              class="btn animated hover-white dark mt-8 md:px-[25px] md:py-[10px] md:text-[20px] text-[16px] px-[15px] py-[5px] font-bold bg-black border-none text-white"
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay="1.5s"
@@ -264,7 +294,7 @@
               تقديم طلب حج القرعه
             </button>
             <button
-              class="btn animated hover-white bg-secound-gold mt-8 px-[25px] py-[10px] text-[20px] font-bold text-white"
+              class="btn animated hover-white bg-secound-gold mt-8 md:px-[25px] md:py-[10px] md:text-[20px] text-[16px] px-[15px] py-[5px] font-bold text-white"
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay="1.6s"
@@ -285,7 +315,7 @@
               class="w-[70px] object-contain"
             />
             <h2
-              class="animate-on-scroll text-[50px] font-arabic-header"
+              class="animate-on-scroll md:text-[50px] text-[30px] font-arabic-header"
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".1s"
@@ -355,12 +385,18 @@
               data-delay=".5s"
             >
               <div class="image-wrapper">
-                <img src="./img/intro-section/img-5.png" alt="" />
+                <img
+                  class="w-full object-cover"
+                  src="./img/intro-section/img-5.png"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="mb-2 text-lg font-bold text-white">حج القرعه</h4>
                 <button
                   class="btn white text-primary px-4 py-1 text-sm font-bold text-white cursor-pointer"
+                  data-modal-target="default-modal-secound"
+                  data-modal-toggle="default-modal-secound"
                 >
                   تفاصيل اكثر
                 </button>
@@ -373,12 +409,18 @@
               data-delay=".7s"
             >
               <div class="image-wrapper">
-                <img src="./img/intro-section/img-4.png" alt="" />
+                <img
+                  class="w-full object-cover"
+                  src="./img/intro-section/img-4.png"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="mb-2 text-lg font-bold text-white">حج الهيئات</h4>
                 <button
                   class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white cursor-pointer"
+                  data-modal-target="default-modal-secound"
+                  data-modal-toggle="default-modal-secound"
                 >
                   تفاصيل اكثر
                 </button>
@@ -391,12 +433,18 @@
               data-delay=".8s"
             >
               <div class="image-wrapper">
-                <img src="./img/intro-section/img-3.png" alt="" />
+                <img
+                  class="w-full object-cover"
+                  src="./img/intro-section/img-3.png"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="mb-2 text-lg font-bold text-white">حج الجمعيات</h4>
                 <button
                   class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white cursor-pointer"
+                  data-modal-target="default-modal-secound"
+                  data-modal-toggle="default-modal-secound"
                 >
                   تفاصيل اكثر
                 </button>
@@ -409,12 +457,18 @@
               data-delay=".9s"
             >
               <div class="image-wrapper">
-                <img src="./img/intro-section/img-2.png" alt="" />
+                <img
+                  class="w-full object-cover"
+                  src="./img/intro-section/img-2.png"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="mb-2 text-lg font-bold text-white">حج السياحه</h4>
                 <button
                   class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white cursor-pointer"
+                  data-modal-target="default-modal-secound"
+                  data-modal-toggle="default-modal-secound"
                 >
                   تفاصيل اكثر
                 </button>
@@ -427,12 +481,18 @@
               data-delay="1s"
             >
               <div class="image-wrapper">
-                <img src="./img/intro-section/img-1.png" alt="" />
+                <img
+                  class="w-full object-cover"
+                  src="./img/intro-section/img-1.png"
+                  alt=""
+                />
               </div>
               <div class="content">
                 <h4 class="mb-2 text-lg font-bold text-white">حج الفرادي</h4>
                 <button
                   class="btn white hover-black text-primary px-4 py-1 text-sm font-bold text-white cursor-pointer"
+                  data-modal-target="default-modal-secound"
+                  data-modal-toggle="default-modal-secound"
                 >
                   تفاصيل اكثر
                 </button>
@@ -516,6 +576,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".3s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -553,9 +615,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]">
+                <button class="hover:text-[#000] cursor-pointer">
                   كيفية آداء ركني الحج الطواف والسعي
-                </a>
+                </button>
               </h3>
             </div>
             <div
@@ -563,6 +625,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".4s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -572,7 +636,7 @@
                 />
 
                 <div class="absolute left-[20px] top-[10px]">
-                  <button>
+                  <button class="cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25.63"
@@ -600,7 +664,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]"> اهم سنن الاحرام </a>
+                <button class="hover:text-[#000] cursor-pointer">
+                  ما هو الاحرام
+                </button>
               </h3>
             </div>
             <div
@@ -608,6 +674,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".5s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -645,7 +713,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]"> ما هو الاحرام</a>
+                <button class="hover:text-[#000] cursor-pointer">
+                  ما هو الاحرام
+                </button>
               </h3>
             </div>
             <div
@@ -653,6 +723,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".3s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -690,9 +762,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]">
-                  فضل الحج وكيف يمكنك الاستعداد والتجهيز لرحلة الحج</a
-                >
+                <button class="hover:text-[#000] cursor-pointer">
+                  فضل الحج وكيف يمكنك الاستعداد والتجهيز لرحلة الحج
+                </button>
               </h3>
             </div>
             <div
@@ -700,6 +772,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".3s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -737,9 +811,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]">
+                <button class="hover:text-[#000] cursor-pointer">
                   أيام النحر والتشريق وما الذي يقوم به الحاج خلال هذه الأيام
-                </a>
+                </button>
               </h3>
             </div>
             <div
@@ -747,6 +821,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".4s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -784,7 +860,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]"> ما هي المزدلفة </a>
+                <button class="hover:text-[#000] cursor-pointer">
+                  ما هي المزدلفة
+                </button>
               </h3>
             </div>
             <div
@@ -792,6 +870,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".5s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -801,7 +881,7 @@
                 />
 
                 <div class="absolute left-[20px] top-[10px]">
-                  <button>
+                  <button class="cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25.63"
@@ -829,9 +909,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]">
+                <button class="hover:text-[#000] cursor-pointer">
                   كيف يقضي الحاج يوم عرفة
-                </a>
+                </button>
               </h3>
             </div>
             <div
@@ -839,6 +919,8 @@
               data-animation="fadeInUp"
               data-duration="0.5s"
               data-delay=".6s"
+              data-modal-target="default-modal-video"
+              data-modal-toggle="default-modal-video"
             >
               <div class="image-wrapper relative rounded-md">
                 <img
@@ -876,7 +958,9 @@
               <h3
                 class="text-primary mx-auto w-[80%] text-center text-lg font-bold"
               >
-                <a href="#" class="hover:text-[#000]"> ما هو مشعر مني </a>
+                <button class="hover:text-[#000] cursor-pointer">
+                  ما هي المزدلفة
+                </button>
               </h3>
             </div>
           </div>
@@ -1078,7 +1162,7 @@
               class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5"
             >
               <div
-                class="image-wrapper animate-on-scroll relative"
+                class="image-wrapper animate-on-scroll relative flex justify-center items-center"
                 data-animation="fadeInUp"
                 data-duration="0.5s"
                 data-delay=".1s"
@@ -1088,18 +1172,18 @@
                   <div class="content">
                     <h2 class="text-2xl font-bold">الفجر</h2>
                     <div
-                      class="mx-auto w-[60%] border-b-[1px] border-[#000]"
+                      class="mx-auto md:w-[60%] w-[30%] border-b-[1px] border-[#000]"
                     ></div>
 
                     <div class="time mt-5 flex flex-col gap-2">
-                      <span class="text-4xl text-[#000]">٥:٢٨ </span>
+                      <span class="text-4xl text-[#000]" id="fagr">٥:٢٨ </span>
                       <span class="text-xl">صباحا</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="image-wrapper animate-on-scroll relative"
+                class="image-wrapper animate-on-scroll relative flex justify-center items-center"
                 data-animation="fadeInUp"
                 data-duration="0.5s"
                 data-delay=".2s"
@@ -1107,20 +1191,20 @@
                 <img src="./img/times/time.png" alt="" />
                 <div class="card-time">
                   <div class="content">
-                    <h2 class="text-2xl font-bold">الفجر</h2>
+                    <h2 class="text-2xl font-bold">الظهر</h2>
                     <div
-                      class="mx-auto w-[60%] border-b-[1px] border-[#000]"
+                      class="mx-auto md:w-[60%] w-[30%] border-b-[1px] border-[#000]"
                     ></div>
 
                     <div class="time mt-5 flex flex-col gap-2">
-                      <span class="text-4xl text-[#000]">٥:٢٨ </span>
-                      <span class="text-xl">صباحا</span>
+                      <span class="text-4xl text-[#000]" id="daohr"> </span>
+                      <span class="text-xl">مساءا</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="image-wrapper animate-on-scroll relative"
+                class="image-wrapper animate-on-scroll relative flex justify-center items-center"
                 data-animation="fadeInUp"
                 data-duration="0.5s"
                 data-delay=".3s"
@@ -1128,20 +1212,20 @@
                 <img src="./img/times/time.png" alt="" />
                 <div class="card-time">
                   <div class="content">
-                    <h2 class="text-2xl font-bold">الفجر</h2>
+                    <h2 class="text-2xl font-bold">العصر</h2>
                     <div
-                      class="mx-auto w-[60%] border-b-[1px] border-[#000]"
+                      class="mx-auto md:w-[60%] w-[30%] border-b-[1px] border-[#000]"
                     ></div>
 
                     <div class="time mt-5 flex flex-col gap-2">
-                      <span class="text-4xl text-[#000]">٥:٢٨ </span>
-                      <span class="text-xl">صباحا</span>
+                      <span class="text-4xl text-[#000]" id="alsr"> </span>
+                      <span class="text-xl">مساءا</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="image-wrapper animate-on-scroll relative"
+                class="image-wrapper animate-on-scroll relative flex justify-center items-center"
                 data-animation="fadeInUp"
                 data-duration="0.5s"
                 data-delay=".4s"
@@ -1149,20 +1233,20 @@
                 <img src="./img/times/time.png" alt="" />
                 <div class="card-time">
                   <div class="content">
-                    <h2 class="text-2xl font-bold">الفجر</h2>
+                    <h2 class="text-2xl font-bold">المغرب</h2>
                     <div
-                      class="mx-auto w-[60%] border-b-[1px] border-[#000]"
+                      class="mx-auto md:w-[60%] w-[30%] border-b-[1px] border-[#000]"
                     ></div>
 
                     <div class="time mt-5 flex flex-col gap-2">
-                      <span class="text-4xl text-[#000]">٥:٢٨ </span>
-                      <span class="text-xl">صباحا</span>
+                      <span class="text-4xl text-[#000]" id="maghreeb"> </span>
+                      <span class="text-xl">مساءا</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="image-wrapper animate-on-scroll relative"
+                class="image-wrapper animate-on-scroll relative flex justify-center items-center"
                 data-animation="fadeInUp"
                 data-duration="0.5s"
                 data-delay=".5s"
@@ -1170,14 +1254,14 @@
                 <img src="./img/times/time.png" alt="" />
                 <div class="card-time">
                   <div class="content">
-                    <h2 class="text-2xl font-bold">الفجر</h2>
+                    <h2 class="text-2xl font-bold">العشاء</h2>
                     <div
-                      class="mx-auto w-[60%] border-b-[1px] border-[#000]"
+                      class="mx-auto md:w-[60%] w-[30%] border-b-[1px] border-[#000]"
                     ></div>
 
                     <div class="time mt-5 flex flex-col gap-2">
-                      <span class="text-4xl text-[#000]">٥:٢٨ </span>
-                      <span class="text-xl">صباحا</span>
+                      <span class="text-4xl text-[#000]" id="alsha"> </span>
+                      <span class="text-xl">مساءا</span>
                     </div>
                   </div>
                 </div>
@@ -1345,11 +1429,14 @@
         >
           <div class="flex items-center justify-between gap-5">
             <div class="logo">
-              <img
-                src="./img/logo-logo.png"
-                alt="hajj"
-                class="w-[230px] object-contain"
-              />
+              <a href="./index.html">
+                <img
+                  src="./img/logo-logo.png"
+                  alt="Logo"
+                  itemprop="logo"
+                  class="w-[150px] object-contain"
+                />
+              </a>
             </div>
 
             <ul>
@@ -1425,6 +1512,206 @@
       </div>
     </footer>
 
+    <!-- Main types -->
+    <div
+      id="default-modal-secound"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[300] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-4xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm px-5">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200"
+          >
+            <h3 class="text-xl font-semibold">حج الهيئات</h3>
+            <button
+              type="button"
+              class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="default-modal-secound"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="py-4">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-6 py-8 px-6">
+              <div class="image-wrapper">
+                <img
+                  class="h-[250px] rounded-lg object-cover"
+                  src="./img/img9.png"
+                  alt="7ag"
+                />
+              </div>
+              <div class="content col-span-2">
+                <p class="font-bold leading-[30px]">
+                  الآتية : صورة من قرار مجلس الوزراء لتخصيص التأشيرات إلى الهيئة
+                  أو الوزارة أو الشخص . عقد الإتفاق بين شركة السياحة والهيئة أو
+                  الوزارة . برنامج الرحلة موضح كافة البيانات والسعر والسكن
+                  والطوافة والطيران . تعد من الشركة بفصل حجاج الهيئة عن حجاج
+                  السياحة التابعين للشركة وتعهد بعمل شيك إركاب لكل حاج وتعهد
+                  بتقديم خطاب ضمان بمبلغ 50 ريال للحكومة السعودية عن كال حاج .
+                  كشف من الهيئة بأسماء الحجاج التابعين لها مع رفع الأسماء على
+                  الموقع الإلكتروني بصفحة الشركة. الحصول على خطاب من الإدارة
+                  موجه لوزارة الداخلية لإستكمال إجراءات الحصول على التأشيرات
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-4">
+              <span
+                >برعايه
+
+                <span class="text-xl font-bold text-[#ebb74f]"
+                  >رئاسه مجلس الوزراء</span
+                >
+              </span>
+
+              <img class="w-[50px] object-contain" src="./img/sponsor3.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal video -->
+
+    <div
+      id="default-modal-video"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[300] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-4xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm px-5">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200"
+          >
+            <h3 class="text-xl font-semibold">كيف يقضي الحاج يوم عرفه</h3>
+            <button
+              type="button"
+              class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="default-modal-video"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="py-4">
+            <div class="flex justify-center items-center">
+              <div class="video mx-auto w-[80%]">
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/Kt7hKHlArl8?si=lENdHFSsEVjCcJPt"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main modal -->
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[300] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm px-5">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200"
+          >
+            <h3 class="text-xl font-semibold">تسجيل الدخول</h3>
+            <button
+              type="button"
+              class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="default-modal"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <form action="#" class="space-y-8 py-8">
+            <div class="grid grid-cols-1 gap-6">
+              <div>
+                <label class="block mb-2 text-sm font-medium">الاسم</label>
+                <input class="w-full control" placeholder="الاسم" required />
+              </div>
+              <div>
+                <label class="block mb-2 text-sm font-medium">الباسورد</label>
+                <input class="w-full control" placeholder="الباسورد" required />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="bg-secound-gold py-3 text-white btn white hover-black px-4 py-1 text-sm font-bold text-white cursor-pointer"
+            >
+              إرســــــــال
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div
       class="h-[50px] ticker relative flex w-full bg-[#2b2b2b] z-[200] bottom-0"
     >
@@ -1473,16 +1760,173 @@
         <h5 class="text-xs font-bold">اهلا بك انا وطن مساعدك الالي</h5>
         <h2 class="font-bold">كيف يمكنني مساعدتك</h2>
       </div>
-      <button
-        class="bg-secound-gold btn text-white cursor-pointer px-4 py-1 text-sm font-bold mb-3"
+      <a
+        class="bg-secound-gold btn text-white cursor-pointer px-4 py-1 text-sm font-bold mb-3 text-white"
+        href="./faq.html"
       >
         ساعدني
-      </button>
+      </a>
     </div>
+
+    <aside
+      id="default-sidebar"
+      class="md:hidden block fixed top-0 left-0 z-[100] w-64 h-screen transition-transform -translate-x-full"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+        <div class="flex justify-end">
+          <button
+            type="button"
+            class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center close-side items-center cursor-pointer"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <nav class="flex flex-col ps-5 sidebaer" itemprop="mainEntityOfPage">
+          <ul class="flex flex-col gap-4 text-sm font-medium mt-5">
+            <li
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".2s"
+              class="animated"
+            >
+              <a
+                itemprop="url"
+                href="./about-us.html"
+                class="font-bold text-[#000] mb-4"
+              >
+                عن البوابة</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration=".1s"
+              data-delay=".3s"
+            >
+              <a
+                itemprop="url"
+                href="./type-hajj.html"
+                class="font-bold text-black animated"
+              >
+                أنواع الحج</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a class="hover:text-[#ebb74f]"> حج القرعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a class="hover:text-[#ebb74f]">حج الهيئات</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a class="hover:text-[#ebb74f]">حج الجمعيات </a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a class="hover:text-[#ebb74f]">حج السياحه </a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a class="hover:text-[#ebb74f]">حج الفرادي </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".4s"
+            >
+              <a itemprop="url" href="./maps.html" class="font-bold text-black">
+                خرائط</a
+              >
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".5s"
+            >
+              <a href="./asks.html" class="font-bold text-black" itemprop="url">
+                أسئلة وفيديوهات</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="./faq.html" class="hover:text-[#ebb74f]"> اسئله الشائعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="./videos.html" class="hover:text-[#ebb74f]">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".6s"
+            >
+              <a
+                href="./places.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
+                أماكن تواجد البعثة
+              </a>
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]"> حج القرعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج التضامن</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج السياحه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".7s"
+            >
+              <a
+                href="./contact-us.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
+                الشكاوى والمقترحات</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
 
     <script src="./js/tailwindcss.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/pages/home.js"></script>
     <script src="./js/lottify.js"></script>
+    <script src="./js/flowbite.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/all.js"></script>
 

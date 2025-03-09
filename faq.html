@@ -10,16 +10,22 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./img/logo-logo.ico" />
     <link href="./css/stylesheet.css" rel="stylesheet" />
     <link href="./css/ticker.css" rel="stylesheet" />
+    <link href="./css/flowbite.css" rel="stylesheet" />
     <link href="./css/utitlites.css" rel="stylesheet" />
     <link href="./css/animation.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/footer.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/pages/share.css" rel="stylesheet" />
     <link href="./css/pages/about.css" rel="stylesheet" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
     </style>
 
     <title>بوابة الحج المصرية</title>
@@ -36,9 +42,7 @@
 
   <body>
     <header class="shadow-md" itemscope itemtype="https://schema.org/WPHeader">
-      <div
-        class="navbar relative flex items-center justify-between px-4 py-3"
-      >
+      <div class="navbar relative flex items-center justify-between px-4 py-3">
         <div class="flex items-center space-x-4">
           <div
             class="flex items-center animated"
@@ -46,12 +50,14 @@
             data-duration="0.3s"
             data-delay=".1s"
           >
-            <img
-              src="./img/logo-logo.png"
-              alt="Logo"
-              itemprop="logo"
-              class="w-[150px] object-contain"
-            />
+            <a href="./index.html">
+              <img
+                src="./img/logo-logo.png"
+                alt="Logo"
+                itemprop="logo"
+                class="w-[150px] object-contain"
+              />
+            </a>
           </div>
         </div>
 
@@ -62,20 +68,18 @@
           <ul class="flex items-center gap-8 text-sm font-medium">
             <li
               data-animation="fadeInUp"
-              data-duration="0.3s"
+              data-duration="0.5s"
               data-delay=".2s"
               class="animated"
             >
-              <a itemprop="url" href="#" class="font-bold text-[#000]">
+              <a
+                itemprop="url"
+                href="./about-us.html"
+                class="font-bold text-[#000] font-arabic-header"
+              >
                 عن البوابة</a
               >
               <ul class="sun-menu bg-green">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> خدمات البوابه</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">تفاصيل متعدده</a>
-                </li>
                 <li class="px-2 py-2">
                   <a href="#" class="text-white">فيديوهات تعليميه</a>
                 </li>
@@ -87,7 +91,11 @@
               data-duration=".1s"
               data-delay=".3s"
             >
-              <a itemprop="url" href="#" class="font-bold text-black animated">
+              <a
+                itemprop="url"
+                href="./type-hajj.html"
+                class="font-bold text-black animated"
+              >
                 أنواع الحج</a
               >
               <ul class="sun-menu bg-green">
@@ -111,29 +119,20 @@
             <li
               class="animated"
               data-animation="fadeInUp"
-              data-duration="0.3s"
+              data-duration="0.5s"
               data-delay=".4s"
             >
-              <a itemprop="url" href="#" class="font-bold text-black"> خرائط</a>
-              <ul class="sun-menu bg-green">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> الحرم المكي</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">الحرم المدني</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">جبل عرفات </a>
-                </li>
-              </ul>
+              <a itemprop="url" href="./maps.html" class="font-bold text-black">
+                خرائط</a
+              >
             </li>
             <li
               class="animated"
               data-animation="fadeInUp"
-              data-duration="0.3s"
+              data-duration="0.5s"
               data-delay=".5s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a href="./asks.html" class="font-bold text-black" itemprop="url">
                 أسئلة وفيديوهات</a
               >
               <ul class="sun-menu bg-green">
@@ -148,31 +147,28 @@
             <li
               class="animated"
               data-animation="fadeInUp"
-              data-duration="0.3s"
+              data-duration="0.5s"
               data-delay=".6s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a
+                href="./places.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
                 أماكن تواجد البعثة
               </a>
-              <ul class="sun-menu bg-green">
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white"> حج القرعه</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج التضامن</a>
-                </li>
-                <li class="px-2 py-2">
-                  <a href="#" class="text-white">حج السياحه</a>
-                </li>
-              </ul>
             </li>
             <li
               class="animated"
               data-animation="fadeInUp"
-              data-duration="0.3s"
+              data-duration="0.5s"
               data-delay=".7s"
             >
-              <a href="#" class="font-bold text-black" itemprop="url">
+              <a
+                href="./contact-us.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
                 الشكاوى والمقترحات</a
               >
             </li>
@@ -181,7 +177,7 @@
 
         <div class="flex items-center gap-8">
           <div
-            class="phone flex items-center text-sm animated"
+            class="phone md:flex md:items-center hidden text-sm animated"
             data-animation="fadeInUp"
             data-duration=".3s"
             data-delay=".8s"
@@ -189,20 +185,28 @@
             itemscope
             itemtype="https://schema.org/ContactPoint"
           >
-            <span><a href="#"> 02-27983000</a></span>
+            <span><a href="tell:02-27983000"> 02-27983000</a></span>
             <div class="icon">
               <img src="./img/icons/phone.png" alt="" />
             </div>
           </div>
 
           <button
-            class="flex gap-1 animated"
+            class="md:flex md:gap-1 animated hidden lang cursor-pointer"
             data-animation="fadeInUp"
             data-duration=".3s"
             data-delay=".9s"
           >
             <img src="./img/icons/world.png" alt="" class="object-contain" />
-            <span class="text-sm font-bold">Ar</span>
+            <span class="text-sm font-bold lang-text">Ar</span>
+          </button>
+
+          <button
+            class="flex gap-1 md:hidden cursor-pointer hover:text-[#ebb74f] menu"
+          >
+            <span class="text-sm font-bold"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
           </button>
 
           <!-- Login Button & Language Switch -->
@@ -212,7 +216,11 @@
             data-duration=".3s"
             data-delay="1s"
           >
-            <button class="btn bg-secound-gold px-4 py-1 font-bold text-white">
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="btn bg-secound-gold px-4 py-1 font-bold text-white"
+            >
               تسجيل الدخول
             </button>
           </div>
@@ -229,6 +237,7 @@
             data-animation="fadeInMove"
             data-duration="0.5s"
             data-delay=".9s"
+            class="font-arabic-header animated"
           >
             الاسئله الشائعه
           </span>
@@ -601,11 +610,14 @@
         >
           <div class="flex items-center justify-between gap-5">
             <div class="logo">
-              <img
-                src="./img/logo-logo.png"
-                alt="hajj"
-                class="w-[230px] object-contain"
-              />
+              <a href="./index.html">
+                <img
+                  src="./img/logo-logo.png"
+                  alt="Logo"
+                  itemprop="logo"
+                  class="w-[150px] object-contain"
+                />
+              </a>
             </div>
 
             <ul>
@@ -681,6 +693,220 @@
       </div>
     </footer>
 
+    <aside
+      id="default-sidebar"
+      class="md:hidden block fixed top-0 left-0 z-[100] w-64 h-screen transition-transform -translate-x-full"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+        <div class="flex justify-end">
+          <button
+            type="button"
+            class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center close-side items-center cursor-pointer"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <nav class="flex flex-col ps-5 sidebaer" itemprop="mainEntityOfPage">
+          <ul class="flex flex-col gap-4 text-sm font-medium mt-5">
+            <li
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".2s"
+              class="animated"
+            >
+              <a
+                itemprop="url"
+                href="./about-us.html"
+                class="font-bold text-[#000] mb-4"
+              >
+                عن البوابة</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration=".1s"
+              data-delay=".3s"
+            >
+              <a
+                itemprop="url"
+                href="./type-hajj.html"
+                class="font-bold text-black animated"
+              >
+                أنواع الحج</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]"> حج القرعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج الهيئات</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج الجمعيات </a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج السياحه </a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج الفرادي </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".4s"
+            >
+              <a itemprop="url" href="./maps.html" class="font-bold text-black">
+                خرائط</a
+              >
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".5s"
+            >
+              <a href="./asks.html" class="font-bold text-black" itemprop="url">
+                أسئلة وفيديوهات</a
+              >
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]"> اسئله الشائعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">فيديوهات تعليميه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".6s"
+            >
+              <a
+                href="./places.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
+                أماكن تواجد البعثة
+              </a>
+              <ul class="mt-2 ms-3 sub">
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]"> حج القرعه</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج التضامن</a>
+                </li>
+                <li class="px-1 py-1 hover:text-[#ebb74f]">
+                  <a href="#" class="hover:text-[#ebb74f]">حج السياحه</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="animated"
+              data-animation="fadeInUp"
+              data-duration="0.5s"
+              data-delay=".7s"
+            >
+              <a
+                href="./contact-us.html"
+                class="font-bold text-black"
+                itemprop="url"
+              >
+                الشكاوى والمقترحات</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main modal -->
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[300] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm px-5">
+          <!-- Modal header -->
+          <div
+            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200"
+          >
+            <h3 class="text-xl font-semibold">تسجيل الدخول</h3>
+            <button
+              type="button"
+              class="bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="default-modal"
+            >
+              <svg
+                class="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <form action="#" class="space-y-8 py-8">
+            <div class="grid grid-cols-1 gap-6">
+              <div>
+                <label class="block mb-2 text-sm font-medium">الاسم</label>
+                <input class="w-full control" placeholder="الاسم" required />
+              </div>
+              <div>
+                <label class="block mb-2 text-sm font-medium">الباسورد</label>
+                <input class="w-full control" placeholder="الباسورد" required />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="bg-secound-gold py-3 text-white btn white hover-black px-4 py-1 text-sm font-bold text-white cursor-pointer"
+            >
+              إرســــــــال
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div
       class="h-[50px] ticker relative flex w-full bg-[#2b2b2b] z-[200] bottom-0"
     >
@@ -721,23 +947,9 @@
       <i class="fa-solid fa-arrow-down"></i>
     </div>
 
-    <div class="chat">
-      <div class="image-wrapper absolute">
-        <img src="./img/user.png" alt="" />
-      </div>
-      <div class="content mr-2 py-4">
-        <h5 class="text-xs font-bold">اهلا بك انا وطن مساعدك الالي</h5>
-        <h2 class="font-bold">كيف يمكنني مساعدتك</h2>
-      </div>
-      <button
-        class="bg-secound-gold btn text-white cursor-pointer px-4 py-1 text-sm font-bold mb-3"
-      >
-        ساعدني
-      </button>
-    </div>
-
     <script src="./js/tailwindcss.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./js/flowbite.js"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/lottify.js"></script>
     <script src="./js/swiper.js"></script>

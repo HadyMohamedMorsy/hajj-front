@@ -4,12 +4,12 @@ header .navbar {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-nav ul li:hover > .sun-menu {
+header nav ul li:hover > .sun-menu {
   visibility: visible;
   opacity: 1;
 }
 
-nav ul li .sun-menu {
+header nav ul li .sun-menu {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s, visibility 0.2s;
@@ -20,11 +20,11 @@ nav ul li .sun-menu {
   padding-block: 5px;
   z-index: 5;
 }
-nav ul li .sun-menu.bg-green {
+header nav ul li .sun-menu.bg-green {
   background-color: #adbabb;
 }
 
-nav ul li .sun-menu::after {
+header nav ul li .sun-menu::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -38,33 +38,34 @@ nav ul li .sun-menu::after {
   margin-inline-start: 5px;
 }
 
-nav ul li .sun-menu li:not(:last-child) a {
+header nav ul li .sun-menu li:not(:last-child) a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   padding-bottom: 5px;
 }
 
-nav ul li .sun-menu li a {
+header nav ul li .sun-menu li a {
   display: inline-block;
   width: 100%;
   transition: color 0.2s;
   font-size: 16px;
   font-weight: 900;
+  color: #fff;
 }
 
-nav ul li .sun-menu li a:hover {
+header nav ul li .sun-menu li a:hover {
   color: #000;
 }
 
-nav ul li a {
+header nav ul li a {
   transition: color 0.2s;
 }
 
-nav ul li a:not(:last-child) {
+header nav ul li a:not(:last-child) {
   border-inline-end: 1px solid #000;
   padding-inline-end: 15px;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: var(--gold);
 }
 
@@ -107,4 +108,23 @@ nav ul li a:hover {
   left: 50%;
   text-align: end;
   transform: translate(-50%, -50%);
+}
+
+.sidebaer > ul > li > a:hover {
+  color: var(--gold) !important;
+}
+
+.sub > li {
+  position: relative;
+}
+.sub > li::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: -10px;
+  top: 10px;
+
+  width: 5px;
+  height: 5px;
+  background-color: var(--gold);
+  border-radius: 50%;
 }
